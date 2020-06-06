@@ -27,7 +27,7 @@ class P {
     };
 
     try {
-      return fn(resolve, reject); // Promise返回新实例，其他值返回new this
+      fn(resolve, reject);
     } catch (e) {
       reject(`Error ${e.message}`);
     }
